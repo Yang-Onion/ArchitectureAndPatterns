@@ -1,7 +1,7 @@
 ﻿using RepositoryPattern.Domain;
 using System;
 
-namespace RepositoryPattern.Infrastructure
+namespace RepositoryPattern.Domain
 {
     public interface IRepository<AggregateRoot,IdType> where AggregateRoot : IAggregateRoot<IdType>
     {
@@ -10,6 +10,7 @@ namespace RepositoryPattern.Infrastructure
 
         bool Update(AggregateRoot aggregateRoot);
         AggregateRoot Query(IdType id);
+        IEquatable<AggregateRoot> QueryAll();
 
     }
 }
