@@ -23,14 +23,12 @@ namespace DDD.Learning.Domain
 
         public static bool operator ==(EntityBase<IdType> entity1,EntityBase<IdType> entity2)
         {
-            if (entity1==null && entity2==null)
-            {
+            if (ReferenceEquals(entity1,null) && ReferenceEquals(entity2,null))
                 return true;
-            }
-            if (entity1==null || entity2==null)
-            {
+
+            if (ReferenceEquals(entity1, null) || ReferenceEquals(entity2, null))
                 return false;
-            }
+
             if (entity1.Id.ToString()== entity2.Id.ToString())
             {
                 return true;
