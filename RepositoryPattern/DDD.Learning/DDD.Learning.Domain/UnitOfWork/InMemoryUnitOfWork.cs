@@ -51,15 +51,15 @@ namespace DDD.Learning.Domain.UnitOfWork
             {
                 foreach (IAggregateRoot aggreateRoot in _insertedAggreates.Keys)
                 {
-                    _insertedAggreates[aggreateRoot].
+                    //_insertedAggreates[aggreateRoot].
                 }
                 foreach (IAggregateRoot aggreateRoot in _deletedAggreates.Keys)
                 {
-                    _deletedAggreates[aggreateRoot]
+                    //_deletedAggreates[aggreateRoot]
                 }
                 foreach (IAggregateRoot aggreateRoot in _deletedAggreates.Keys)
                 {
-                    _updatedAggreates[aggreateRoot]
+                    //_updatedAggreates[aggreateRoot]
                 }
             }
             

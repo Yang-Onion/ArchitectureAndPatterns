@@ -4,14 +4,16 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace DDD.Learning.Repository.Impl
+namespace DDD.Learning.Repository.Memory
 {
     public abstract class Repository<DomainType,IdType,DatabaseType>: IUnitOfWorkRepository where DomainType:IAggregateRoot
     {
         private readonly IUnitOfWork _unitOfWork;
-        public Repository(IUnitOfWork unitOfWork)
+        private readonly IObjectContextFactory _objectContextFactory;
+        public Repository(IUnitOfWork unitOfWork,IObjectContextFactory objectContextFactory)
         {
-            _unitOfWork = unitOfWork ?? throw new AccessViolationException("Unit of work can not be null");
+            _unitOfWork = unitOfWork ?? throw new ArgumentNullException("Unit of work can not be null");
+            _objectContextFactory = objectContextFactory ?? throw new ArgumentNullException("Object context factory can not be null");
         }
 
         public void PersistInsertion(IAggregateRoot aggregateRoot)
