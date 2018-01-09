@@ -7,11 +7,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DDD.Learning.Infrastructure
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DDD.Learning.Domain", "DDD.Learning.Domain\DDD.Learning.Domain.csproj", "{E0573A76-490C-4A68-BAA1-0DA4DEC88D5B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDD.Learning.Repository.Interface", "DDD.Learning.Repository.Interface\DDD.Learning.Repository.Interface.csproj", "{D5605833-7B6B-4CF5-A8AC-48E1DC4821FB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DDD.Learning.Repository.Interface", "DDD.Learning.Repository.Interface\DDD.Learning.Repository.Interface.csproj", "{D5605833-7B6B-4CF5-A8AC-48E1DC4821FB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDD.Learning.Repository.Memory", "DDD.Learning.Repository.Impl\DDD.Learning.Repository.Memory.csproj", "{C5F7553F-4BFE-4EC7-A804-F66D976D0178}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DDD.Learning.Repository.Memory", "DDD.Learning.Repository.Impl\DDD.Learning.Repository.Memory.csproj", "{C5F7553F-4BFE-4EC7-A804-F66D976D0178}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDD.Learning.ApplicationServices", "DDD.Learning.ApplicationServices\DDD.Learning.ApplicationServices.csproj", "{F339ACFA-1316-4AA5-A625-9BEC140CFE46}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DDD.Learning.ApplicationServices", "DDD.Learning.ApplicationServices\DDD.Learning.ApplicationServices.csproj", "{F339ACFA-1316-4AA5-A625-9BEC140CFE46}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDD.Learning.Presentation", "DDD.Learning.Presentation\DDD.Learning.Presentation.csproj", "{1AC251F2-9476-4C66-9D7E-E98281E8A4E7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{F339ACFA-1316-4AA5-A625-9BEC140CFE46}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F339ACFA-1316-4AA5-A625-9BEC140CFE46}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F339ACFA-1316-4AA5-A625-9BEC140CFE46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AC251F2-9476-4C66-9D7E-E98281E8A4E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AC251F2-9476-4C66-9D7E-E98281E8A4E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AC251F2-9476-4C66-9D7E-E98281E8A4E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AC251F2-9476-4C66-9D7E-E98281E8A4E7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
