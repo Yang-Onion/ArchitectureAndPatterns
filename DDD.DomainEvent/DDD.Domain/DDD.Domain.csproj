@@ -5,11 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Events\" />
-    <Folder Include="EventHandlers\" />
-    <Folder Include="Commands\" />
-    <Folder Include="CommandHandlers\" />
-    <Folder Include="Validations\" />
+    <PackageReference Include="FluentValidation" Version="7.3.4" />
+    <PackageReference Include="MediatR" Version="4.0.1" />
   </ItemGroup>
 
   <ItemGroup>

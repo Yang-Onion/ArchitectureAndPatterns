@@ -5,9 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="新文件夹\**" />
-    <EmbeddedResource Remove="新文件夹\**" />
-    <None Remove="新文件夹\**" />
+    <PackageReference Include="FluentValidation" Version="7.3.4" />
+    <PackageReference Include="MediatR" Version="4.0.1" />
   </ItemGroup>
 
 </Project>

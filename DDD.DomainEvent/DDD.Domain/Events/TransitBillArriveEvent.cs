@@ -4,9 +4,9 @@ using System.Text;
 
 namespace DDD.Domain.Events
 {
-    public class TransitBillArrivEvent: Core.Events.Event
+    public class TransitBillArriveEvent: Core.Events.Event
     {
-        public TransitBillArrivEvent(Guid id, string name, decimal taxFee, decimal distanceFee, decimal grossProfit)
+        public TransitBillArriveEvent(Guid id, string name, decimal taxFee, decimal distanceFee, decimal grossProfit)
         {
             Id = id;
             Name = name;
